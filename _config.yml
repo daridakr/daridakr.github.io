@@ -1,0 +1,32 @@
+title: Daria Krivushkina
+description: Unity Gameplay Systems Engineer — AI-Driven Gameplay, Mobile Performance, C# Architecture.
+url: "https://daridakr.github.io"
+baseurl: ""
+lang: en
+markdown: kramdown
+highlighter: rouge
+
+kramdown:
+  input: GFM
+  auto_ids: true
+
+sass:
+  style: compressed
+
+defaults:
+  - scope:
+      path: ""
+    values:
+      layout: default
+
+contact:
+  github: "https://github.com/daridakr"
+  linkedin: "https://www.linkedin.com/in/daria-krivushkina/"
+  email: "d.krivushkina@gmail.com"
+
+exclude:
+  - README.md
+  - Gemfile
+  - Gemfile.lock
+  - vendor
+  - assets/images/README.md

@@ -1,0 +1,18 @@
+{% assign image_path = '/assets/images/' | append: include.file %}
+{% assign image_available = false %}
+{% for image_file in site.static_files %}
+  {% if image_file.path == image_path %}
+    {% assign image_available = true %}
+    {% break %}
+  {% endif %}
+{% endfor %}
+
+{% if image_available %}
+<img src="{{ image_path | relative_url }}" alt="{{ include.alt | escape }}" loading="lazy" decoding="async">
+{% else %}
+<div class="media-placeholder" role="note">
+  Image unavailable: <code>{{ include.alt | escape }}</code>.
+  Add the original file at <code>assets/images/{{ include.file | escape }}</code>.
+  Original reference: <code>{{ include.original | escape }}</code>.
+</div>
+{% endif %}
