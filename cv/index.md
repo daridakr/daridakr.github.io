@@ -74,7 +74,7 @@ With 4+ years of experience in software and game development, I specialize in bu
 
 {% include cv-image.html file="image.png" alt="image.png" original="Daria%20Krivushkina/image.png" %}
 
-**Projects:** [Live Farm](https://github.com/daridakr/gemini-ai-farm) / [Riftvale](https://github.com/daridakr/Riftvale), [Forever Village](https://github.com/daridakr/Forever-Village).
+**Projects:** [Live Farm](https://github.com/daridakr/gemini-ai-farm){:target="_blank" rel="noopener noreferrer"} / [Riftvale](https://github.com/daridakr/Riftvale){:target="_blank" rel="noopener noreferrer"}, [Forever Village](https://github.com/daridakr/Forever-Village){:target="_blank" rel="noopener noreferrer"}.
 
 ### 🤖 AI Systems
 {: #ai-systems }
@@ -170,15 +170,11 @@ September 2018 – March 2022
 
 2024
 
-<div class="media-placeholder">
-  Original media:
-  <a href="https://media.giphy.com/media/FHWRYD5iLI68FzmuZd/giphy.gif">Riftvale GIF</a>.
-  Image location reserved for a static project image.
-</div>
+{% include riftvale-media.html %}
 
 **Role:** Team Unity Developer, Head Of Development
 
-**Source Code:** [github.com/daridakr/Riftvale](https://github.com/daridakr/Riftvale)
+**Source Code:** [github.com/daridakr/Riftvale](https://github.com/daridakr/Riftvale){:target="_blank" rel="noopener noreferrer"}
 
 First MVP of an AI-driven mobile RPG that validated the gameplay concept and established the architectural foundations later expanded in Live Farm.
 
@@ -197,11 +193,11 @@ First MVP of an AI-driven mobile RPG that validated the gameplay concept and est
 
 2025
 
-[https://youtu.be/BGwqTxJXdK0?si=FH7QEW5joYAqR47e](https://youtu.be/BGwqTxJXdK0?si=FH7QEW5joYAqR47e)
+{% include youtube.html id="BGwqTxJXdK0" title="LiveFarm — AI-Driven Gameplay Systems" source="https://youtu.be/BGwqTxJXdK0?si=FH7QEW5joYAqR47e" %}
 
 **Role:** Solo Unity Developer
 
-**Project:** [github.com/daridakr/gemini-ai-farm](https://github.com/daridakr/gemini-ai-farm)
+**Project:** [github.com/daridakr/gemini-ai-farm](https://github.com/daridakr/gemini-ai-farm){:target="_blank" rel="noopener noreferrer"}
 
 Reworked version of the Riftvale concept with a stronger architecture and a revised gameplay layer.
 
@@ -217,11 +213,11 @@ Reworked version of the Riftvale concept with a stronger architecture and a revi
 
 2023
 
-[https://youtu.be/XkX8LXaweK8?si=mXB3aKjlttfn4kRO](https://youtu.be/XkX8LXaweK8?si=mXB3aKjlttfn4kRO)
+{% include youtube.html id="XkX8LXaweK8" title="Forever Village — RPG / WebGL Case" source="https://youtu.be/XkX8LXaweK8?si=mXB3aKjlttfn4kRO" %}
 
 **Role:** Solo Unity Developer
 
-**Project:** [github.com/daridakr/Forever-Village](https://github.com/daridakr/Forever-Village)
+**Project:** [github.com/daridakr/Forever-Village](https://github.com/daridakr/Forever-Village){:target="_blank" rel="noopener noreferrer"}
 
 Large-scale RPG and village simulation project used as the basis for a full technical architecture review and later AI-oriented redesign.
 
@@ -272,17 +268,7 @@ Large-scale RPG and village simulation project used as the basis for a full tech
 Contact:
 {: #contact }
 
-{% include cv-image.html file="github.svg" alt="github.svg" original="Daria%20Krivushkina/github.svg" %}
-
-{% include cv-image.html file="linkedin.svg" alt="linkedin.svg" original="Daria%20Krivushkina/linkedin.svg" %}
-
-{% include cv-image.html file="email.svg" alt="email.svg" original="Daria%20Krivushkina/email.svg" %}
-
-{% include cv-image.html file="whatsapp.svg" alt="whatsapp.svg" original="Daria%20Krivushkina/whatsapp.svg" %}
-
-[GitHub](https://github.com/daridakr) ·
-[LinkedIn](https://www.linkedin.com/in/daria-krivushkina/) ·
-[Email](mailto:d.krivushkina@gmail.com)
+{% include contact-links.html class="contact-inline" %}
 
 ---
 

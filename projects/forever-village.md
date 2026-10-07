@@ -10,11 +10,11 @@ permalink: /projects/forever-village/
 
 2023
 
-[https://youtu.be/XkX8LXaweK8?si=mXB3aKjlttfn4kRO](https://youtu.be/XkX8LXaweK8?si=mXB3aKjlttfn4kRO)
+{% include youtube.html id="XkX8LXaweK8" title="Forever Village — RPG / WebGL Case" source="https://youtu.be/XkX8LXaweK8?si=mXB3aKjlttfn4kRO" %}
 
 **Role:** Solo Unity Developer
 
-**Project:** [github.com/daridakr/Forever-Village](https://github.com/daridakr/Forever-Village)
+**Project:** [github.com/daridakr/Forever-Village](https://github.com/daridakr/Forever-Village){:target="_blank" rel="noopener noreferrer"}
 
 Large-scale RPG and village simulation project used as the basis for a full technical architecture review and later AI-oriented redesign.
 
@@ -34,7 +34,6 @@ Large-scale RPG and village simulation project used as the basis for a full tech
 
 ## Related Master CV Sections
 
-The employment section describes shared engineering experience across DeQuest & Rivalz projects. Its framework and modifier details are not attributed to a specific project in the Master CV.
 
 - [Data-Driven Gameplay Frameworks: progression, resource production, and villager modifiers]({{ '/cv/' | relative_url }}#gameplay-systems)
 - [Config/Runtime Separation]({{ '/cv/' | relative_url }}#gameplay-systems)

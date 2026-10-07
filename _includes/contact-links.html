@@ -1,0 +1,14 @@
+<nav class="contact-links {{ include.class | escape }}" aria-label="Contact Daria">
+  <a href="{{ site.contact.github }}" target="_blank" rel="noopener noreferrer" aria-label="GitHub" title="GitHub">
+    {% include contact-icon.html name="github" %}<span>GitHub</span>
+  </a>
+  <a href="{{ site.contact.linkedin }}" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" title="LinkedIn">
+    {% include contact-icon.html name="linkedin" %}<span>LinkedIn</span>
+  </a>
+  <a href="{{ site.contact.email_url | escape }}" target="_blank" rel="noopener noreferrer" aria-label="Email — interview invitation" title="Email">
+    {% include contact-icon.html name="email" %}<span>Email</span>
+  </a>
+  <a href="{{ site.contact.whatsapp | escape }}" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp — schedule a call" title="WhatsApp">
+    {% include contact-icon.html name="whatsapp" %}<span>WhatsApp</span>
+  </a>
+</nav>

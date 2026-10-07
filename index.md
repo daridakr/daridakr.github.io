@@ -14,8 +14,7 @@ page_class: landing
 I build deterministic gameplay systems for Unity where AI, domain logic, and presentation stay isolated.
 {: .lead }
 
-[Full Technical CV →]({{ '/cv/' | relative_url }})
-{: .primary-link }
+<a class="primary-link" href="{{ '/cv/' | relative_url }}">Full Technical CV →</a>
 
 ## Projects
 
@@ -27,6 +26,6 @@ I build deterministic gameplay systems for Unity where AI, domain logic, and pre
 
 ## Source & Contact
 
-- [GitHub source code](https://github.com/daridakr?tab=repositories)
-- [LinkedIn](https://www.linkedin.com/in/daria-krivushkina/)
-- [Email](mailto:d.krivushkina@gmail.com)
+- [GitHub source code](https://github.com/daridakr?tab=repositories){:target="_blank" rel="noopener noreferrer"}
+- [LinkedIn](https://www.linkedin.com/in/daria-krivushkina/){:target="_blank" rel="noopener noreferrer"}
+- [Email]({{ site.contact.email_url }}){:target="_blank" rel="noopener noreferrer"}

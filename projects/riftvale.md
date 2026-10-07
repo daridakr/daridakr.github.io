@@ -10,15 +10,11 @@ permalink: /projects/riftvale/
 
 2024
 
-<div class="media-placeholder">
-  Original media:
-  <a href="https://media.giphy.com/media/FHWRYD5iLI68FzmuZd/giphy.gif">Riftvale GIF</a>.
-  Image location reserved for a static project image.
-</div>
+{% include riftvale-media.html %}
 
 **Role:** Team Unity Developer, Head Of Development
 
-**Source Code:** [github.com/daridakr/Riftvale](https://github.com/daridakr/Riftvale)
+**Source Code:** [github.com/daridakr/Riftvale](https://github.com/daridakr/Riftvale){:target="_blank" rel="noopener noreferrer"}
 
 First MVP of an AI-driven mobile RPG that validated the gameplay concept and established the architectural foundations later expanded in Live Farm.
 
@@ -38,7 +34,6 @@ First MVP of an AI-driven mobile RPG that validated the gameplay concept and est
 
 ## Related Master CV Sections
 
-The employment section describes shared engineering experience across DeQuest & Rivalz projects.
 
 - [Generic Runtime Architecture: `ItemStorage<I,R>`, `ItemContainer<I,R>`, and station abstractions]({{ '/cv/' | relative_url }}#gameplay-systems)
 - [State Machines: Model, Controller, View, Context, and State layers]({{ '/cv/' | relative_url }}#performance-architecture)

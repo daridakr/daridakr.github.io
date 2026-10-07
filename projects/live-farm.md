@@ -10,11 +10,11 @@ permalink: /projects/live-farm/
 
 2025
 
-[https://youtu.be/BGwqTxJXdK0?si=FH7QEW5joYAqR47e](https://youtu.be/BGwqTxJXdK0?si=FH7QEW5joYAqR47e)
+{% include youtube.html id="BGwqTxJXdK0" title="LiveFarm — AI-Driven Gameplay Systems" source="https://youtu.be/BGwqTxJXdK0?si=FH7QEW5joYAqR47e" %}
 
 **Role:** Solo Unity Developer
 
-**Project:** [github.com/daridakr/gemini-ai-farm](https://github.com/daridakr/gemini-ai-farm)
+**Project:** [github.com/daridakr/gemini-ai-farm](https://github.com/daridakr/gemini-ai-farm){:target="_blank" rel="noopener noreferrer"}
 
 Reworked version of the Riftvale concept with a stronger architecture and a revised gameplay layer.
 
@@ -31,7 +31,6 @@ Reworked version of the Riftvale concept with a stronger architecture and a revi
 
 ## Related Master CV Sections
 
-The employment section describes shared engineering experience across DeQuest & Rivalz projects.
 
 - [Narrative Interpreter, Context & Memory, and Core Loop Protection]({{ '/cv/' | relative_url }}#ai-systems)
 - [Async AI Transport: 2-7 ms application overhead]({{ '/cv/' | relative_url }}#ai-systems)

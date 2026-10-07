@@ -23,6 +23,8 @@ contact:
   github: "https://github.com/daridakr"
   linkedin: "https://www.linkedin.com/in/daria-krivushkina/"
   email: "d.krivushkina@gmail.com"
+  email_url: "mailto:d.krivushkina@gmail.com?subject=Interview%20Invitation%3A%20Daria%20Krivushkina&body=Hello%20Daria%2C%0AWe%20reviewed%20your%20resume%20and%20would%20like%20to%20schedule%20a%20call.%0AHere%20are%20our%20available%20time%20slots%3A%0A%5BPlease%20insert%20your%20available%20slots%20here%5D%0ABest%20regards%2C"
+  whatsapp: "https://wa.me/351962163391?text=Hello%20Daria%2C%20I%20reviewed%20your%20resume%20and%20would%20like%20to%20schedule%20a%20call.%20My%20available%20slots%20are%3A"
 
 exclude:
   - README.md

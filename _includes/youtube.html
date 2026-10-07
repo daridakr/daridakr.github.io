@@ -1,0 +1,13 @@
+<figure class="project-video">
+  <div class="video-frame" data-video-id="{{ include.id | escape }}" data-video-title="{{ include.title | escape }}">
+    <button class="video-play" type="button" aria-label="Play {{ include.title | escape }} video">
+      <span class="play-symbol" aria-hidden="true">▶</span>
+      <span>Watch project demo</span>
+      <span class="video-title">{{ include.title | escape }}</span>
+    </button>
+    <noscript>
+      <iframe src="https://www.youtube-nocookie.com/embed/{{ include.id | escape }}" title="{{ include.title | escape }}" width="640" height="360" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </noscript>
+  </div>
+  <figcaption><a href="{{ include.source | escape }}" target="_blank" rel="noopener noreferrer">Open on YouTube ↗</a></figcaption>
+</figure>
