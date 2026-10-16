@@ -1,0 +1,194 @@
+---
+layout: default
+title: Unity & C# Development Services
+description: Freelance Unity and C# debugging, targeted code reviews, Android build troubleshooting, gameplay systems, developer tools, and AI gameplay integration.
+permalink: /services/
+page_class: services
+---
+
+<style>
+  .content.services { width: min(1080px, calc(100% - 3rem)); padding-top: 2.5rem; }
+  .services { --s-accent: #95bfef; --s-accent-soft: rgba(149, 191, 239, .12); --s-border: #303846; --s-panel: #161b21; --s-muted: #a7b1c1; }
+  .services .s-kicker { display: inline-flex; align-items: center; gap: .55rem; margin-bottom: 1.25rem; color: #b7d6fb; font-size: .77rem; font-weight: 750; text-transform: uppercase; letter-spacing: .15em; }
+  .services .s-kicker::before { content: ""; width: 8px; height: 8px; background: #86d3bb; border-radius: 50%; box-shadow: 0 0 0 5px rgba(134,211,187,.11); }
+  .services .s-hero { position: relative; isolation: isolate; padding: clamp(2rem, 5vw, 3.8rem); background: radial-gradient(circle at 90% 0%,rgba(94,146,209,.18),transparent 48%),linear-gradient(145deg,#1a2330 0%,#131820 58%,#101317 100%); border: 1px solid #344155; border-radius: 20px; overflow: hidden; }
+  .services .s-hero::after { content: ""; position: absolute; right: -125px; bottom: -200px; width: 380px; height: 380px; background: radial-gradient(circle,rgba(132,183,233,.12),transparent 65%); z-index: -1; pointer-events: none; }
+  .services .s-hero h1 { max-width: 15ch; margin: 0 0 1rem; font-size: clamp(2.25rem, 5.5vw, 4rem); line-height: 1.09; letter-spacing: -.048em; }
+  .services .s-hero h1 span { color: #a8cefa; }
+  .services .s-hero p { max-width: 62ch; color: #c4cedb; font-size: 1.04rem; line-height: 1.7; }
+  .services .s-actions { display: flex; flex-wrap: wrap; gap: .8rem; align-items: center; margin-top: 1.7rem; }
+  .services a.s-button { min-height: 44px; display: inline-flex; align-items: center; justify-content: center; gap: .45rem; padding: .68rem 1.05rem; font-weight: 700; text-decoration: none; border-radius: 9px; border: 1px solid #bad9ff; background: #aed1f8; color: #101820; }
+  .services a.s-button:hover { background: #d0e5fe; border-color: #d0e5fe; }
+  .services a.s-button-secondary { background: transparent; color: #dce8f8; border-color: #4c5c72; }
+  .services a.s-button-secondary:hover { color: #fff; background: #263244; border-color: #7189a8; }
+  .services .s-meta { display: flex; flex-wrap: wrap; gap: .65rem 1.3rem; margin-top: 2rem; color: #aebed0; font-size: .88rem; }
+  .services .s-meta span { display: inline-flex; align-items: center; gap: .5rem; }
+  .services .s-meta span::before { content: "✓"; color: #90d9c0; }
+  .services .s-section { margin-top: 3.25rem; }
+  .services .s-section-heading { display: flex; align-items: end; justify-content: space-between; flex-wrap: wrap; gap: .6rem 2rem; margin-bottom: 1.25rem; }
+  .services .s-section-heading h2 { margin: 0; font-size: clamp(1.6rem,3vw,2rem); }
+  .services .s-section-heading p { margin: 0; color: var(--s-muted); font-size: .92rem; }
+  .services .s-grid { display: grid; grid-template-columns: repeat(2,minmax(0,1fr)); gap: 1rem; }
+  .services .s-card { min-width: 0; padding: 1.55rem; background: var(--s-panel); border: 1px solid var(--s-border); border-radius: 14px; display: flex; flex-direction: column; }
+  .services .s-card:hover { border-color: #506984; }
+  .services .s-card-top { display: flex; justify-content: space-between; align-items: flex-start; flex-wrap: wrap; gap: .65rem; margin-bottom: .85rem; }
+  .services .s-index { color: #91acd0; font: 700 .75rem/1.3 ui-monospace,SFMono-Regular,Consolas,monospace; letter-spacing: .12em; }
+  .services .s-price { display: inline-block; color: #dcecff; padding: .27rem .65rem; background: var(--s-accent-soft); border: 1px solid #3a516c; border-radius: 999px; font-weight: 750; font-size: .88rem; white-space: nowrap; }
+  .services .s-card h3 { margin: 0 0 .55rem; font-size: 1.22rem; }
+  .services .s-card p { margin: 0; color: #acb9c9; line-height: 1.65; font-size: .94rem; }
+  .services .s-delivery { margin-top: auto; padding-top: 1.2rem; font-size: .84rem; color: #bed4ed; }
+  .services .s-delivery::before { content: "↳ "; color: #86d3bb; }
+  .services .s-feature { display: grid; grid-template-columns: minmax(0,1.35fr) minmax(0,1fr); gap: 2rem; padding: clamp(1.5rem,4vw,2.5rem); border: 1px solid #485a72; border-radius: 17px; background: linear-gradient(115deg,#182331,#151a21); }
+  .services .s-feature h3 { margin: .1rem 0 1rem; font-size: clamp(1.55rem,2.8vw,2rem); }
+  .services .s-feature p { color: #b8c6d6; }
+  .services .s-feature ul { margin: 0; padding-left: 1.15rem; color: #d7e0eb; font-size: .92rem; }
+  .services .s-feature li { margin: 0 0 .7rem; }
+  .services .s-feature .s-price { margin-top: .8rem; font-size: .95rem; }
+  .services .s-proof { display: grid; grid-template-columns: repeat(3,minmax(0,1fr)); gap: 1rem; }
+  .services .s-proof article { padding: 1.4rem; border: 1px solid var(--s-border); border-radius: 12px; background: #12171d; }
+  .services .s-proof h3 { margin: 0 0 .55rem; font-size: 1rem; }
+  .services .s-proof p { margin: 0 0 .8rem; color: var(--s-muted); font-size: .87rem; line-height: 1.58; }
+  .services .s-proof a { font-size: .88rem; font-weight: 700; }
+  .services .s-steps { display: grid; grid-template-columns: repeat(3,minmax(0,1fr)); gap: 1rem; counter-reset: service-steps; }
+  .services .s-step { counter-increment: service-steps; padding: 1.45rem; border-left: 2px solid #4f789f; background: #131820; border-radius: 0 12px 12px 0; }
+  .services .s-step::before { content: "0" counter(service-steps); display: block; color: #a8c9ee; font: 750 .9rem/1.5 ui-monospace,SFMono-Regular,Consolas,monospace; margin-bottom: .7rem; }
+  .services .s-step h3 { font-size: 1rem; margin: 0 0 .5rem; }
+  .services .s-step p { margin: 0; color: #aebccc; font-size: .9rem; }
+  .services .s-note { margin-top: 1.15rem; color: #aab7c6; font-size: .89rem; }
+  .services .s-contact { margin-top: 3.2rem; padding: clamp(1.55rem,4vw,2.5rem); border: 1px solid #445b76; border-radius: 17px; background: linear-gradient(130deg,#1b2939,#141b25); }
+  .services .s-contact h2 { margin: 0 0 .75rem; }
+  .services .s-contact p { max-width: 64ch; color: #c0cddb; }
+  .services .s-contact ul { margin: 0 0 1.3rem; padding-left: 1.25rem; font-size: .93rem; color: #d1dce8; }
+  .services .s-contact li { margin-bottom: .3rem; }
+  .services .s-fineprint { padding: 1.1rem 0; margin: 1rem 0 0; color: #9aa9b8; font-size: .84rem; }
+  .services a:focus-visible { outline-offset: 4px; }
+  @media (max-width: 740px) { .services .s-feature { grid-template-columns: 1fr; gap: .6rem; } .services .s-proof,.services .s-steps { grid-template-columns: 1fr; } }
+  @media (max-width: 580px) { .content.services { width: calc(100% - 2rem); } .services .s-grid { grid-template-columns: 1fr; } .services .s-hero { padding: 1.5rem; } .services .s-hero h1 { font-size: 2.2rem; } }
+  @media (prefers-reduced-motion: reduce) { .services * { scroll-behavior: auto; } }
+</style>
+
+<section class="s-hero" aria-labelledby="services-title">
+  <span class="s-kicker">Independent Unity &amp; C# engineering</span>
+  <h1 id="services-title">Get your Unity project <span>unstuck.</span></h1>
+  <p>Focused debugging, maintainable gameplay code, Android build fixes, and practical developer tooling. I work with indie studios and small teams that need a defined engineering task delivered without hiring a full-time developer.</p>
+  <div class="s-actions">
+    <a class="s-button" href="mailto:d.krivushkina@gmail.com?subject=Unity%20project%20%E2%80%94%20request%20an%20estimate">Request an estimate <span aria-hidden="true">↗</span></a>
+    <a class="s-button s-button-secondary" href="#service-pricing">Explore services ↓</a>
+  </div>
+  <div class="s-meta"><span>Remote worldwide · Based in Portugal</span><span>Unity / C# / Android</span><span>Fixed-scope or hourly work</span></div>
+</section>
+
+<section class="s-section" id="service-pricing" aria-labelledby="pricing-title">
+  <div class="s-section-heading">
+    <h2 id="pricing-title">Services &amp; starting prices</h2>
+    <p>EUR · indicative pricing</p>
+  </div>
+  <div class="s-grid">
+    <article class="s-card">
+      <div class="s-card-top"><span class="s-index">01 / DIAGNOSE</span><span class="s-price">€60</span></div>
+      <h3>Unity bug diagnosis</h3>
+      <p>Investigate one clearly described Unity/C# issue, relevant logs, and the affected code path. Up to 90 minutes of focused analysis.</p>
+      <div class="s-delivery">Findings, likely cause, and recommended next steps</div>
+    </article>
+    <article class="s-card">
+      <div class="s-card-top"><span class="s-index">02 / REVIEW</span><span class="s-price">From €120</span></div>
+      <h3>Targeted C# code review</h3>
+      <p>Review one bounded gameplay feature or subsystem for correctness, lifecycle issues, coupling, and maintainability. This is not a whole-project audit.</p>
+      <div class="s-delivery">Prioritized findings with code references and fixes to consider</div>
+    </article>
+    <article class="s-card">
+      <div class="s-card-top"><span class="s-index">03 / FIX</span><span class="s-price">From €100</span></div>
+      <h3>Bug fixing &amp; refactoring</h3>
+      <p>Fix a reproducible issue or refactor an agreed part of an existing Unity/C# implementation without expanding scope unexpectedly.</p>
+      <div class="s-delivery">Scoped code changes and a verification summary</div>
+    </article>
+    <article class="s-card">
+      <div class="s-card-top"><span class="s-index">04 / BUILD</span><span class="s-price">From €180</span></div>
+      <h3>Android build troubleshooting</h3>
+      <p>Investigate Unity Android build and startup issues involving IL2CPP, code stripping, Addressables, dependency configuration, or build settings.</p>
+      <div class="s-delivery">Root-cause assessment and an agreed repair path</div>
+    </article>
+    <article class="s-card">
+      <div class="s-card-top"><span class="s-index">05 / AUTOMATE</span><span class="s-price">From €250</span></div>
+      <h3>Unity Editor tools &amp; workflows</h3>
+      <p>Build a small custom Editor utility, validation tool, build-profile workflow, or automation that removes repetitive development steps.</p>
+      <div class="s-delivery">A documented tool with an agreed acceptance checklist</div>
+    </article>
+    <article class="s-card">
+      <div class="s-card-top"><span class="s-index">06 / BUILD SYSTEMS</span><span class="s-price">From €400</span></div>
+      <h3>Gameplay features &amp; modules</h3>
+      <p>Implement a defined gameplay feature such as an inventory component, progression flow, FSM, event-driven mechanic, or modular UI logic.</p>
+      <div class="s-delivery">Functional implementation matched to an agreed scope</div>
+    </article>
+  </div>
+  <p class="s-note">All prices are starting estimates for limited scopes, not fixed quotes for unknown codebases. Complexity, project access, platform requirements, and testing needs affect the final proposal. Larger tasks can be split into paid milestones.</p>
+</section>
+
+<section class="s-section" aria-labelledby="larger-title">
+  <div class="s-section-heading"><h2 id="larger-title">Larger integrations &amp; custom systems</h2><p>Quoted per project</p></div>
+  <div class="s-feature">
+    <div>
+      <span class="s-kicker">Beyond quick fixes</span>
+      <h3>Custom engineering for ambitious gameplay.</h3>
+      <p>For projects that need more than a one-off fix, I can scope and implement larger Unity/C# modules, from engine-independent gameplay architecture to controlled AI-driven interactions.</p>
+      <span class="s-price">Typically €650+ · custom quote</span>
+    </div>
+    <div>
+      <ul>
+        <li>Google Gemini API integration and function-calling gameplay workflows</li>
+        <li>Context-aware NPC dialogue and deterministic action routing</li>
+        <li>Inventory, quests, production, progression, and other interconnected gameplay systems</li>
+        <li>Modular architecture, dependency injection, and event-driven refactoring</li>
+        <li>Mobile performance investigation and targeted runtime optimization</li>
+      </ul>
+      <p class="s-note">Pricing depends on deliverables, integration depth, and test requirements; substantial work is estimated individually.</p>
+    </div>
+  </div>
+</section>
+
+<section class="s-section" aria-labelledby="proof-title">
+  <div class="s-section-heading"><h2 id="proof-title">Relevant engineering work</h2><p>Examples from real Unity projects</p></div>
+  <div class="s-proof">
+    <article>
+      <h3>Live Farm · AI gameplay</h3>
+      <p>Gemini Function Calling, validated gameplay handlers, asynchronous integration, Addressables, and Android IL2CPP troubleshooting.</p>
+      <a href="{{ '/projects/live-farm/' | relative_url }}">View project →</a>
+    </article>
+    <article>
+      <h3>Riftvale · Gameplay frameworks</h3>
+      <p>Reusable inventory and production logic, state-driven buildings, typed events, and modular gameplay architecture.</p>
+      <a href="{{ '/projects/riftvale/' | relative_url }}">View project →</a>
+    </article>
+    <article>
+      <h3>Forever Village · Systems review</h3>
+      <p>Gameplay and architecture analysis covering progression, combat, persistence, performance, and modular redesign.</p>
+      <a href="{{ '/projects/forever-village/' | relative_url }}">View project →</a>
+    </article>
+  </div>
+</section>
+
+<section class="s-section" aria-labelledby="process-title">
+  <div class="s-section-heading"><h2 id="process-title">Simple, scoped collaboration</h2></div>
+  <div class="s-steps">
+    <div class="s-step"><h3>Share the problem</h3><p>Tell me the Unity version, affected platform, symptoms, relevant logs, and what success looks like.</p></div>
+    <div class="s-step"><h3>Agree on scope</h3><p>We define deliverables, estimate, timeline, access, and acceptance criteria before implementation.</p></div>
+    <div class="s-step"><h3>Review the result</h3><p>You receive the agreed code changes or diagnostic findings, plus concise handover notes.</p></div>
+  </div>
+  <p class="s-note">Project code remains confidential. I do not share client source code, and third-party AI tools are used only when authorized by the client.</p>
+</section>
+
+<section class="s-contact" id="contact" aria-labelledby="contact-title">
+  <h2 id="contact-title">Have a Unity task in mind?</h2>
+  <p>Send a short description and I’ll let you know whether I can take it on, what I would need to inspect, and a realistic next step.</p>
+  <ul>
+    <li>Unity version and target platform (Android, PC, WebGL, etc.)</li>
+    <li>What is broken or what you want to build</li>
+    <li>Relevant errors, constraints, timeline, and approximate budget, if known</li>
+  </ul>
+  <div class="s-actions">
+    <a class="s-button" href="mailto:d.krivushkina@gmail.com?subject=Unity%20project%20%E2%80%94%20request%20an%20estimate">Email project details ↗</a>
+    <a class="s-button s-button-secondary" href="{{ '/cv/' | relative_url }}">Technical background ↗</a>
+  </div>
+</section>
+
+<p class="s-fineprint">Daria Krivushkina · Unity / C# Engineer · Portugal · Remote collaboration</p>
